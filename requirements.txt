@@ -1,0 +1,6 @@
+wheel
+xlrd
+click
+pyperclip
+jinja2
+openpyxl
