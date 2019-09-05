@@ -1,6 +1,6 @@
 import unittest
 import os
-from import_excel import ImportSampleSubmission
+from check_sample_submission.import_excel import ImportSampleSubmission
 
 
 class TestImportLibraryPrepSamples(unittest.TestCase):

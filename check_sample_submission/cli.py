@@ -1,6 +1,6 @@
 import click
-from import_excel import ImportSampleSubmission
-from print_cache import PrintCache
+from check_sample_submission.import_excel import ImportSampleSubmission
+from check_sample_submission.print_cache import PrintCache
 
 
 @click.group()

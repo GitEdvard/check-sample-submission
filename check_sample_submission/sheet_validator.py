@@ -1,5 +1,5 @@
 import re
-from excel_formatter import ERROR
+from check_sample_submission.excel_formatter import ERROR
 
 
 class SheetValidator:

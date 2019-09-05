@@ -1,5 +1,5 @@
 import unittest
-from sheet_validator import SheetValidator
+from check_sample_submission.sheet_validator import SheetValidator
 
 
 class TestValidateSampleName(unittest.TestCase):

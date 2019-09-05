@@ -1,8 +1,7 @@
 import openpyxl as xl
-from openpyxl.styles import PatternFill
-from utils import lazyprop
-from sheet_validator import SheetValidator
-from excel_formatter import ExcelFormatter
+from check_sample_submission.utils import lazyprop
+from check_sample_submission.sheet_validator import SheetValidator
+from check_sample_submission.excel_formatter import ExcelFormatter
 
 
 CAPTION_ROW_OFFSET = 5

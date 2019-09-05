@@ -1,6 +1,5 @@
 import unittest
-from unittest import skip
-from sheet_validator import SheetValidator
+from check_sample_submission.sheet_validator import SheetValidator
 
 
 class TestValidateVolume(unittest.TestCase):

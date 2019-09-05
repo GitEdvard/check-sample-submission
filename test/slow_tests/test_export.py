@@ -1,7 +1,7 @@
 import unittest
 import os
 from unittest import skip
-from import_excel import ImportSampleSubmission
+from check_sample_submission.import_excel import ImportSampleSubmission
 
 
 class TestImportReadyMadeLibraries(unittest.TestCase):
