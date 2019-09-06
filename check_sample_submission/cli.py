@@ -47,6 +47,9 @@ def validate(sample_column_index, volume_column_index, sample_column_name,
         cache.copy_to_clipboard()
     else:
         print('No errors detected!')
+    if not import_excel.save_workbook():
+        print('Excel formatting cannot be updated because the file is already open. '
+              'Please close the file if you want excel formatting enabled!')
 
 
 def cli_main():

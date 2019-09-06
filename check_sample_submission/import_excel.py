@@ -17,7 +17,7 @@ class ImportSampleSubmission:
         self.sample_column_index = sample_column_index
         self.volume_column_index = volume_column_index
         self.sample_column_name = sample_column_name
-        self.workbook = xl.load_workbook(file_path)
+        self.workbook = xl.load_workbook(self.file_path)
         self.sample_list_sheet = self.workbook['Sample list']
 
     def check_faulty_contents(self):
@@ -27,8 +27,14 @@ class ImportSampleSubmission:
             self.volume_column_index)
         validator = SheetValidator(excel_formatter=formatter, logger=self.logger)
         error_messages = validator.list_faulty(self.contents)
-        self.workbook.save(self.export_to_file_path)
         return error_messages
+
+    def save_workbook(self):
+        try:
+            self.workbook.save(self.export_to_file_path)
+        except PermissionError:
+            return False
+        return True
 
     def _cell_value(self, row_index, col_index):
         return self.sample_list_sheet.cell(row=row_index + 1, column=col_index + 1).value
