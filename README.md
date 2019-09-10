@@ -1,12 +1,12 @@
 # check-sample-submission
 
 ## Installation
-Prerequisite is python 3. Then,
+Prerequisities
+- miniconda 3
+- git
+- Ensure that you have the python script path <python installation dir>/Scripts added in your PATH environment variable.
 
 pip install -U git+https://github.com/Molmed/check-sample-submission.git#egg=check-sample-submission
-
-## Windows
-Ensure that you have the python script path <python installation dir>/Scripts added in your PATH environment variable.
 
 ## Usage
 Show available commandos
@@ -19,5 +19,6 @@ Validate sample submission for ready made libraries
   
 Validate sample submission for library preparation samples
 
-\>check-sample-submission validate-ordinary \<path to file\>
+\>check-sample-submission validate-prep \<path to file\>
   
+\>check-sample-submission version
