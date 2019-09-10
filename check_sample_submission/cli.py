@@ -31,6 +31,12 @@ def validate_prep(ctx, file_path):
     validate(sample_column_index, volume_column_index,
              sample_column_name, file_path)
 
+@cli.command('version')
+@click.pass_context
+def validate_prep(ctx):
+    # TODO: Fix proper version handling
+    print('1.0.0')
+
 
 def validate(sample_column_index, volume_column_index, sample_column_name,
              file_path):

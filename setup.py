@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='Check sample submission',
-    version='1.0.0',
+    version='1.0.0',  # Note, you must also update version in cli.py!
     entry_points={
         'console_scripts': [
             'check-sample-submission=check_sample_submission.cli:cli_main'
